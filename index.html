@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap Theme</title>
+	<!-- BOOTSTRAP CSS CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- FONT AWESOME -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+</head>
+	<body>
+	<!-- NAVIGATION -->
+	<!-- 
+	navbar-expand-md tamaño de la navegación, indica que cuando usemos dispositivos  pequeños con una resolución entre 576 a 767 pixeles aparecerá el clásico menú tipo hamburguesa para de esta manera hacerlo responsivo 
+
+	 bg-dark color de fondo
+
+	 navbar-dark color de la navegación
+	
+	 fixed-top para que la navegación se quede fija
+	-->
+	<nav class="navbar navbar-expand-md bg-dark navbar-dark fixed-top">
+		<div class="container">
+			<a href="index.html" class="navbar-brand">Bootstrap Theme</a>
+			<!-- 
+				Este botón solo aparecerá en dispositivos móviles 			
+				
+				navbar-toggler debido a que el botón aparecerá dependiendo del tamaño de la navegación
+				
+				Cuando hacemos clic en el botón, esto me lleva a la información que deseo mostrar
+
+			-->
+			<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+				<span class="navbar-toggler-icom"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarCollapse">
+				<!-- 
+					De esta manera todos los enlaces que coloque después de <ul class="navbar-nav ml-auto"> se alinearan a la derecha
+				-->
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item">
+						<a href="#home-section" class="nav-link">Home</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#info-section" class="nav-link">Info</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#" class="nav-link">Create</a>
+					</li>
+
+					<li class="nav-item">
+						<a href="#" class="nav-link">Share</a>
+					</li>
+				</ul>
+				
+			</div>
+		</div>
+	</nav>
+	<!-- HOME -->
+	<header id="home-section">
+		<div class="dark-overlay">
+			<div class="home-inner">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-8">
+							<!-- 
+								display-4 tamaño de la fuente
+								d-flex para utilizar flex box
+								flex-row para colocar los items uno debajo de otro
+								p-4 padding de 4 
+							 -->
+							<h1 class="display-4">Lorem <strong>ipsum</strong> dolor.</h1>
+							<div class="d-flex flex-row">
+								<div class="p-4">
+									<!-- para el icono de Font Awesome -->
+									<i class="fas fa-certificate"></i>
+								</div>
+								<div class="p-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit quae incidunt quisquam, dolores molestiae facilis!</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<!-- BOOTSTRAP SCRIPT CDN -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</body>
+</html>
